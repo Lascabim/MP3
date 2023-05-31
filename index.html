@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- LINKS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="icon" href="./favicons/favicon.ico">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- MAIN JS -->
+
+  <script defer src="./js/script.js"></script>
+
+  <title>Music Gallery</title>
+</head>
+<body onload="zoom()">
+
+  <main>
+    <img alt="artist" class="artist_image" id="imageArt" src="./images/1.png">    
+    
+    <h1 class="music-data">
+      <span class="music-number" id="numberM">1</span> -
+      <span class="music-name" id="nameM">Welcome to the Rodeo</span>
+    </h1>
+
+    <form class="form">
+      <input
+        id="inputF"
+        type="search" 
+        class="input-search" 
+        placeholder="Song Name" 
+        required
+      >
+    </form>
+
+    <button class="button-search" onclick="searchImage()">
+      &#128269;
+    </button>
+
+    <div class="buttons">
+      <button onclick="changeImage('prev')" class="button prev">&lt; Prev</button>
+      <button onclick="changeImage('next')" class="button next">Next ></button>
+    </div>
+
+    <img src="./images/iphone.png" alt="iphone" class="iphone">
+
+  </main>
+
+</body>
